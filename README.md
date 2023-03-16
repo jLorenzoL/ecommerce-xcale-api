@@ -17,4 +17,7 @@ E-commerce service:
     Servicio que se encarga de listar los productos disponibles (La información se obtiene a traves de una api externa a traves del cliente Feign)
  
  ### addProductsToCart
-    Servicio que se encarga de agregar los productos (id, description, amount) al cart generado previamente (/generateCart)
+    Servicio que se encarga de agregar los productos (id, description, amount) al cart generado previamente (/generateCart). En caso no se cuente con idCart generado, se mostrará una excepción.
+
+ ### deleteCart
+    Elimina el id cart almacenado en cache
