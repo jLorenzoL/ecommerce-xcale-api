@@ -4,7 +4,6 @@ import com.xcale.ecommerce.entity.Cart;
 import com.xcale.ecommerce.excepcion.BussinessExcepcion;
 import com.xcale.ecommerce.external.feign.client.FeignExternalClient;
 import com.xcale.ecommerce.mapper.ConfigMapper;
-import com.xcale.ecommerce.repository.CartRepository;
 import com.xcale.ecommerce.util.Utils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,9 +21,6 @@ import java.util.Objects;
 @RequiredArgsConstructor
 @Slf4j
 public class CartService {
-
-    @Autowired
-    CartRepository cartRepository;
 
     private final FeignExternalClient feignExternalClient;
 

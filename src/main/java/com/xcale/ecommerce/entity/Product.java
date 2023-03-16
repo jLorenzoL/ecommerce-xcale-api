@@ -1,12 +1,8 @@
 package com.xcale.ecommerce.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Data;
 
-@Getter
-@Setter
-@Document(collection = "coll_product")
+@Data
 public class Product {
 
     private Long id;
